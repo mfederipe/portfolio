@@ -1,0 +1,31 @@
+@use "variables" as *;
+
+@font-face {
+  font-family: "Space Mono";
+  src: url("/src/assets/fonts/SpaceMono-Regular.ttf") format("truetype");
+  font-weight: $font-weight-regular;
+}
+
+@font-face {
+  font-family: "Space Mono";
+  src: url("/src/assets/fonts/SpaceMono-Italic.ttf") format("truetype");
+  font-weight: $font-weight-regular;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/src/assets/fonts/Inter-VariableFont_opsz,wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
+  font-variation-settings: "opsz" 18;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/src/assets/fonts/Inter-Italic-VariableFont_opsz,wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-variation-settings: "opsz" 18;
+}
