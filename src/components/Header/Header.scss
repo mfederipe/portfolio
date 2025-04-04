@@ -1,0 +1,35 @@
+.header {
+  font-family: "Space Mono", monospace;
+  background-color: rgba(#fffbfe, 0.5);
+  padding: 1.25rem;
+  position: sticky;
+
+  &__nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.5rem;
+  }
+
+  &__link {
+    color: #555;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.75rem;
+    background-color: #fff;
+    box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+
+    &:hover {
+      background-color: #fff;
+      transform: scale(1.05);
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 0.125rem #dedede;
+    }
+  }
+}
