@@ -1,0 +1,43 @@
+.home {
+  display: flex;
+  justify-content: center;
+  padding: 4rem 2rem;
+
+  &__card {
+    font-family: "Space Mono", monospace;
+    background-color: #fff;
+    border: 0.125rem dashed #f8b7d8;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    max-width: 45rem;
+    width: 100%;
+    box-shadow: 0 0.125rem 1rem rgba(#fe8ec6, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__avatar {
+    width: 11.25rem;
+    height: 11.25rem;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  &__name {
+    font-size: 1.125rem;
+    color: #c94c91;
+    background-color: #fff0f5;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+  }
+
+  &__bio {
+    font-size: 0.875rem;
+    color: #444;
+    background-color: #fffbfe;
+    border-left: 0.125rem solid #f8b7d8;
+    padding: 1rem;
+  }
+}
