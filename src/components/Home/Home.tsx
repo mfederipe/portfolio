@@ -9,10 +9,10 @@ function Home() {
         <h1 className="home__name">const Marison = "Full-Stack Developer";</h1>
         <p className="home__bio">
           Hi, I'm Marison, a Software Engineer with a background in Health
-          Sciences. I fell in love with tech when I realized I could bring any
-          idea to life. I was always creative growing up, but somewhere along
+          Sciences. I grew an interest in tech when I realized I could bring any
+          idea to life. I was always artistic growing up, but somewhere along
           the way, I lost that spark. Coding has helped me reconnect with that
-          side of myself, and that's what keeps me motivated each day.
+          side of myself, and that's why I love what I do.
           <br />
           Thanks for stopping by!ㅤ♡
         </p>
