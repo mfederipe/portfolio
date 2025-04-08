@@ -1,0 +1,245 @@
+.projects {
+  max-width: 80%;
+  margin: 0 auto;
+
+  &__toggle {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1.5rem;
+  }
+
+  &__switch {
+    position: relative;
+    display: inline-block;
+    width: 3.125rem;
+    height: 1.625rem;
+
+    input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+
+      &:checked + .projects__slider {
+        background-color: #fe8ec6;
+      }
+
+      &:checked + .projects__slider::before {
+        transform: translateX(1.5rem);
+      }
+    }
+  }
+
+  &__slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 2.125rem;
+
+    &::before {
+      position: absolute;
+      content: "";
+      height: 1.25rem;
+      width: 1.25rem;
+      left: 0.1875rem;
+      bottom: 0.1875rem;
+      background-color: white;
+      transition: 0.4s;
+      border-radius: 50%;
+    }
+  }
+
+  &__card {
+    border-radius: 1rem;
+    overflow: hidden;
+
+    &-tab {
+      padding: 0.5rem 1rem;
+      border-bottom: 0.0625rem solid;
+    }
+
+    &-dots {
+      display: flex;
+      gap: 0.5rem;
+      cursor: pointer;
+
+      .projects__dot {
+        width: 0.75rem;
+        height: 0.75rem;
+        border-radius: 50%;
+
+        &--red {
+          background-color: #ff5f56;
+        }
+
+        &--yellow {
+          background-color: #ffbd2e;
+        }
+
+        &--green {
+          background-color: #27c93f;
+        }
+      }
+    }
+
+    &-container {
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    &-code {
+      font-size: 0.75rem;
+      padding: 1rem;
+      line-height: 1.4;
+      overflow-x: auto;
+      border: 0.0625rem solid;
+      color: rgb(126, 126, 126);
+    }
+
+    .projects__code-line {
+      display: flex;
+
+      &:hover {
+        background-color: rgba(254, 142, 198, 0.05);
+      }
+
+      .projects__line-number {
+        width: 2rem;
+        text-align: right;
+        margin-right: 1rem;
+        opacity: 0.6;
+      }
+    }
+
+    &-image {
+      width: 100%;
+      border: 0.0625rem solid;
+      object-fit: cover;
+      margin: 0 auto;
+    }
+
+    &-btns {
+      display: flex;
+      gap: 1rem;
+
+      a {
+        font-family: "Space Mono", monospace;
+        font-size: 0.75rem;
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        text-decoration: none;
+      }
+
+      .projects__btn-live {
+        background: #fe8ec6;
+        color: white;
+
+        &:hover {
+          background: #e26ba6;
+        }
+      }
+
+      .projects__btn-github {
+        background: #fff0f7;
+        color: #c94c91;
+
+        &:hover {
+          background: #ffd6e9;
+        }
+      }
+    }
+  }
+}
+
+/* DARK THEME */
+.projects--dark {
+  .projects__card {
+    background-color: #252539;
+
+    &-tab {
+      background-color: #2d2d40;
+      border-color: #3a3a50;
+    }
+
+    &-code {
+      background-color: #1e1e2f;
+      border-color: #3a3a50;
+
+      .projects__key {
+        color: #c586c0;
+      }
+
+      .projects__variable {
+        color: #9cdcfe;
+      }
+
+      .projects__string {
+        color: #ce9178;
+      }
+
+      .projects__line-number {
+        color: #aaa;
+      }
+    }
+
+    &-image {
+      border-color: #3a3a50;
+    }
+  }
+}
+
+/* LIGHT THEME */
+.projects--light {
+  .projects__card {
+    background-color: #ffffff;
+    border: 0.0625rem solid #ffe0ed;
+    box-shadow: 0 0.25rem 0.75rem rgba(255, 192, 203, 0.15);
+
+    &-tab {
+      background-color: #fff5f9;
+      border-color: #ffcde4;
+    }
+
+    &-code {
+      background-color: #fffafc;
+      border-color: #ffcde4;
+
+      .projects__key {
+        color: #d455a4;
+      }
+
+      .projects__variable {
+        color: #5788cc;
+      }
+
+      .projects__string {
+        color: #da3964;
+      }
+
+      .projects__line-number {
+        color: #c89db0;
+      }
+    }
+
+    &-image {
+      border-color: #ffcde4;
+      box-shadow: 0 0.125rem 0.5rem rgba(255, 192, 203, 0.2);
+    }
+
+    .projects__btn-github {
+      background: #ffffff;
+      color: #c94c91;
+      border: 0.0625rem solid #f5b6d4;
+
+      &:hover {
+        background: #ffe2ef;
+      }
+    }
+  }
+}
