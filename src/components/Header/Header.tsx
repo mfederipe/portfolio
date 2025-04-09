@@ -11,7 +11,7 @@ function Header() {
           Projects
         </a>
         <a href="#about" className="header__link">
-          About
+          About Me
         </a>
         <a href="#contact" className="header__link">
           Contact

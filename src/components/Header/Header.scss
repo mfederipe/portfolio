@@ -1,8 +1,10 @@
 .header {
   font-family: "Space Mono", monospace;
-  background-color: rgba(#fffbfe, 0.5);
+  background-color: rgba(#fffbfe, 0.75);
   padding: 1.25rem;
   position: sticky;
+  top: 0;
+  z-index: 1;
 
   &__nav {
     display: flex;
