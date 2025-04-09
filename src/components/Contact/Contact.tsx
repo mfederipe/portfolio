@@ -18,7 +18,7 @@ const Contact: React.FC = () => {
       <h2 className="contact__title">Let's Connect!</h2>
       <p className="contact__info">
         I'm always open to new opportunities, feel free to reach out:{" "}
-        <a href="mailto:johndoe@email.com">johndoe@email.com</a>
+        <a href="mailto:marisonfdrp@gmail.com">marisonfdrp@gmail.com</a>
       </p>
     </section>
   );
